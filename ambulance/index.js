@@ -90,7 +90,7 @@ function calculateDistanceTimeSpeed(locationOne, locationTwo, speed) {
 }
 
 async function fetchBusLocation() {
-  const auth = "$2y$10$mUiiGZjTiDatqMEvRhlRAeqVpQlLAW5psz/IchLS/JzBh0HQ9uHDy";
+  const auth = "$2y$10$04uFjy/4laOdFchGB6CPxeHppa.scaLtWYDmuK/Y6B9F8yF8imKi2";
   const url = `https://portal.hypegpstracker.com/api/get_devices?user_api_hash=${auth}`;
 
   try {
@@ -226,10 +226,10 @@ async function fetchBusLocation() {
 }
 
 function filterData(data) {
-  const mlrInstitute = data.find((entry) => entry.id === 22);
+  const mlrInstitute = data.find((entry) => entry.id === 31);
   if (!mlrInstitute) return null;
 
-  const item = mlrInstitute.items.find((item) => item.id === 447);
+  const item = mlrInstitute.items.find((item) => item.id === 1552);
   if (!item) return null;
 
   const { lat, lng, speed } = item;
@@ -314,7 +314,7 @@ if (istTime >= 2 && istTime <= 13) {
   path = "routeEvening.json";
 }
 
-company = [17.596408800611012, 78.44292931995813];
+company = [17.595975620524055, 78.45258619532636];
 var companyMarker = L.marker(company, {
   icon: L.icon({
     className: 'custom-icon',

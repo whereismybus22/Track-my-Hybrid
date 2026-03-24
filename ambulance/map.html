@@ -236,7 +236,7 @@
     <script>
         let isUserBusSet = false;  // Variable to keep track of toggle state
         let userLocationMarker;    // Variable to store the user location marker
-        let toLocation = [17.596408800611012, 78.44292931995813];
+        let toLocation = [17.595975620524055, 78.45258619532636];
 
         // Custom icon for the user's location marker
         const userLocationIcon = L.icon({
@@ -309,7 +309,7 @@
                     alert("Geolocation is not supported by this browser.");
                 }
             } else {
-                toLocation = [17.596408800611012, 78.44292931995813];
+                toLocation = [17.595975620524055, 78.45258619532636];
                 // Reset to previous bounds or state
                 map.fitBounds(L.latLngBounds([company, presentBusLocation]), { padding: [80, 80, 80, 80] });
                 document.querySelector('.set-user-bus-button img').src = "../img/follow_user.png";
