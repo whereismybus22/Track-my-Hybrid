@@ -318,7 +318,7 @@ company = [17.595975620524055, 78.45258619532636];
 var companyMarker = L.marker(company, {
   icon: L.icon({
     className: 'custom-icon',
-    iconUrl: "/img/zerocodehr.png",
+    iconUrl: "/img/college.svg",
     iconSize: [38, 38],
     iconAnchor: [16, 32],
   }),
